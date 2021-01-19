@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=zzzz;AccountKey=hhhh;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "testers": "@Microsoft.KeyVault(SecretUri=https://VaultName.vault.azure.net/ccc/SecretName/SecretID1)",
+    "test1": "@Microsoft.KeyVault(SecretUri=https://VaultName1.vault.azure.net/ccc/ClientId/SecretID2)",
+    "test2": "@Microsoft.KeyVault(SecretUri=https://VaultName2.vault.azure.net/ccc/ClientSecret/SecretID3)",
+    "storageaccountautom92bb_STORAGE": "DefaultEndpointsProtocol=https;AccountName=zzzz;AccountKey=hhhh;EndpointSuffix=core.windows.net"
+  }
+}
