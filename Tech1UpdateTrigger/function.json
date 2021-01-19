@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "msg",
+      "type": "outqueque3",
+      "direction": "in",
+      "queueName": "tech1",
+      "connection": "zzzz"
+    },
+    {
+    "type": "queue",
+    "direction": "out",
+    "name": "msg1",
+    "queueName": "outqueue4",
+    "connection": "zzzz"
+    }
+  ]
+}
