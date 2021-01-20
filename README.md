@@ -12,11 +12,11 @@ This function has two queues in use. Check the function bindings in the function
 
 "outqueue3" is the trigger queue. When it receives a message, it starts the function."outqueue4" is the output queue, the functions deposits the very message that triggered it once it has successfully run. 
 
-Serverless_GeoAnalytics_Queue-Trigger1 function has been embedded with a python code running of multiple libraries.
+This function has been embedded with a python code running of multiple libraries.
 
 requirements.txt file Contains the list of Python packages used to run the python code integrated in the function.These packages on requirements.txt are automatically installed in visual studio code when running the function locally and on Azure when the function is published in Azure.
 
-Specifically, this function logs onto ESRI Portal, downloads a feature service with a defined feature ID, dissolves feature service on specific columns and computes the polygon centroids. What each line or a collection of lines do is detailed in the code.
+Specifically, this function logs onto ESRI Portal, downloads 2 feature service with  defined feature IDs. These Features are in different projection systems. It transforms them into a common projection, extracts coordinates, puts them into a table and updates an API point. Details of what each line of code does have been embedded in the code in the __init__.py file
 
 local.settings.json file contains app settings and connection strings used when running locally. This file doesn't get published to Azure but options are given to have it uploaded when publishing Function.
 
